@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pricing Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="pricing-section">
+
+        <div class="header">
+            <h1>Pick a plan</h1>
+            <p>Switch billing any time.</p>
+
+            <div class="toggle">
+                <button id="monthlyBtn" class="active">Monthly</button>
+                <button id="annualBtn">Annual</button>
+            </div>
+        </div>
+
+        <div class="pricing-container">
+
+            <!-- Starter Card -->
+            <div class="card">
+                <h2>Starter</h2>
+                <h1>Free</h1>
+
+                <ul>
+                    <li>1 project</li>
+                    <li>Community support</li>
+                </ul>
+
+                <button class="select-btn">Select Starter</button>
+            </div>
+
+            <!-- Pro Card -->
+            <div class="card pro">
+
+                <span class="popular">POPULAR</span>
+
+                <h2>Pro Plan</h2>
+
+                <h1>
+                    <span class="price" data-monthly="799" data-annual="7990">₹799</span>
+                    <small class="period">/mo</small>
+                </h1>
+
+                <ul>
+                    <li>Unlimited projects</li>
+                    <li>Priority support</li>
+                    <li>Custom domains</li>
+                    <li>Advanced analytics</li>
+                </ul>
+
+                <button class="select-btn">Select Pro</button>
+            </div>
+
+            <!-- Team Card -->
+            <div class="card">
+                <h2>Team</h2>
+
+                <h1>
+                    <span class="price" data-monthly="1999" data-annual="19990">₹1,999</span>
+                    <small class="period">/mo</small>
+                </h1>
+
+                <ul>
+                    <li>Everything in Pro</li>
+                    <li>10 team seats</li>
+                </ul>
+
+                <button class="select-btn">Select Team</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
